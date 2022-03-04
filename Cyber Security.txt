@@ -1,0 +1,10 @@
+How to make Virtual Box full Screen:
+* Change the Graphics Controller to VBoxSVGA, it will be disabled when the vm is running.
+* Stop the VM by discarding the saved state. Then it will be enabled.
+
+How to start wlan0:
+* When wifite is used the wlan0/wifi will be disabled. To enable it,
+use -> sudo systemctl start NetworkManager
+
+How to use apt-get update:
+* Change the content of /etc/apt/sources.list
