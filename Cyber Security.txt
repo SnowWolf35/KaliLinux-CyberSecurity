@@ -8,3 +8,7 @@ use -> sudo systemctl start NetworkManager
 
 How to use apt-get update:
 * Change the content of /etc/apt/sources.list
+
+How to Reconfigure Network (When internet is not working)
+* check the status by entering -> sudo systemctl status systemd-resolved.service
+* sudo systemctl start systemd-resolved.service
