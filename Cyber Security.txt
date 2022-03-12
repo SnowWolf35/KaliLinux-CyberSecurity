@@ -15,8 +15,12 @@ How to install .deb files
 
 How to Reconfigure Network (When internet is not working)
 * check the status by entering -> sudo systemctl status systemd-resolved.service
-* sudo systemctl start systemd-resolved.service
+* $ sudo systemctl start systemd-resolved.service
 
 How to start nessus ( vulnerability scanning tool )
-* systemctl start nessus
+* $ systemctl start nessus
 * visit https://kali:8834/
+
+How to install torrent
+
+* $ apt install qbittorrent
