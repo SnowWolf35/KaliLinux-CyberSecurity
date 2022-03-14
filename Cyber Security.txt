@@ -24,3 +24,7 @@ How to start nessus ( vulnerability scanning tool )
 How to install torrent
 
 * $ apt install qbittorrent
+
+How to install Virtual Box in kali
+
+* $ sudo apt install virtualbox virtualbox-ext-pack
