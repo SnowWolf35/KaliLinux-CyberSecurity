@@ -27,4 +27,7 @@ How to install torrent
 
 How to install Virtual Box in kali
 
+* $ sudo apt install linux-headers-$(uname -r | sed 's,[^-]*-[^-]*-,,')
+* $ sudo apt install linux-image-$(uname -r | sed 's,[^-]*-[^-]*-,,')
+* $ sudo apt install build-essential dkms
 * $ sudo apt install virtualbox virtualbox-ext-pack
