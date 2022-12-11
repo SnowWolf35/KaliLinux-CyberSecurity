@@ -31,3 +31,17 @@ How to install Virtual Box in kali
 * $ sudo apt install linux-image-$(uname -r | sed 's,[^-]*-[^-]*-,,')
 * $ sudo apt install build-essential dkms
 * $ sudo apt install virtualbox virtualbox-ext-pack
+
+How to fix brightness in Linux
+    
+  Open the file /etc/default/grub using gedit or any other text editor.
+  Find the below line.
+
+  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+
+  Change the above line to:
+
+  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=vendor"
+  
+  Restart the device and you are good to go.
+
